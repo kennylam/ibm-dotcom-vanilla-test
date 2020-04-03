@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "parcel build index.html",
-    "start": "parcel serve index.html"
+    "start": "parcel serve -p 9000 index.html"
   },
   "license": "MIT",
   "dependencies": {
@@ -13,6 +13,7 @@
     "carbon-components": "^10.10.3"
   },
   "devDependencies": {
+    "node-sass": "^4.13.1",
     "parcel": "latest"
   }
 }
