@@ -8,8 +8,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@carbon/ibmdotcom-styles": "^1.5.1",
-    "@carbon/ibmdotcom-vanilla": "^0.5.1",
+    "@carbon/ibmdotcom-styles": "latest",
+    "@carbon/ibmdotcom-vanilla": "latest",
     "carbon-components": "^10.10.3"
   },
   "devDependencies": {
