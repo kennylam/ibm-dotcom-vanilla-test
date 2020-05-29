@@ -1,6 +1,6 @@
 import content from "./data/content";
 import { DotcomShell } from "@carbon/ibmdotcom-vanilla";
-import "./styles.scss";
+import "@carbon/ibmdotcom-styles/scss/components/dotcom-shell/_dotcom-shell.scss";
 
 const dotcomShellProps = {
   masthead: {
