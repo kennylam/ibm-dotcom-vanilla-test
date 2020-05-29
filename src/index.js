@@ -1,20 +1,22 @@
 import { DotcomShell } from "@carbon/ibmdotcom-vanilla";
-import '@carbon/ibmdotcom-styles/scss/components/dotcom-shell/_dotcom-shell.scss';
+import "@carbon/ibmdotcom-styles/scss/components/dotcom-shell/_dotcom-shell.scss";
 
 const dotcomShellProps = {
   masthead: {
     navigation: "default",
     platform: {
       name: "IBM Cloud",
-      url: "https://www.ibm.com/cloud"
+      url: "https://www.ibm.com/cloud",
     },
     searchProps: {
-      hasSearch: false
-    }
+      hasSearch: true,
+    },
+    hasNavigation: true,
+    hasProfile: true,
   },
   footer: {
-    footerType: "short"
-  }
+    footerType: "tall",
+  },
 };
 
 const content = `
@@ -28,7 +30,7 @@ const content = `
 async function _loadDotcomShell() {
   const template = await DotcomShell.getDotcomShellWithData({
     content,
-    ...dotcomShellProps
+    ...dotcomShellProps,
   });
   const yourapp = document.getElementById("app");
   yourapp.innerHTML = template;
